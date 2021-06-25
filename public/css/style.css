@@ -1,0 +1,67 @@
+/* 
+FALTA POCIOSIONAR LOS ARTICULOS
+EL PROFE USO POSITION EN LA CLASE
+PERO CREO SERIA MEJOR USAR ZINDEX
+*/
+
+
+/* VARIABLES */
+:root{
+--bg: #444;
+--bgr: #b92519;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: solid 1px cornflowerblue; */
+}
+body{
+    background-image: url(/images/bg-body.png);
+}
+body .container{
+    padding: 10px;
+}
+
+/* HEADER */
+.main-header .logo{
+    border-radius: 100px;
+}
+.main-header{
+    text-align: center;
+}
+.main-header .toggle-nav {
+    display: block;
+    color: white;
+    font-size: 25px;
+    background-color: var(--bg);
+    margin: 20px auto;
+    /* padding: 5px 0; */
+    border-radius: 3px;
+    width: fit-content;
+    width: -moz-fit-content;
+    width: 40px;
+    height: 30px;
+}
+
+/* NAV */
+
+.main-nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: var(--bg);
+    margin: 1px 0;
+    padding: 5px 0;
+    text-transform: uppercase;
+    
+}
+.main-nav ul{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+/* BANER */
+.banner{
+    display: none;
+}
