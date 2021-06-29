@@ -64,7 +64,15 @@ body .container{
 }
 
 /* ARTICULOS */
-
+.vip-products{
+    margin: 0px auto;
+}
+.product{
+    max-width: 380px;
+    min-width: 380px;
+    margin-right: 5px;
+    display: inline-block;
+}
 .photo-container{
     position: relative;
 }
@@ -90,9 +98,6 @@ body .container{
 }
 
 
-.product{
-    margin: 40px 5px;
-}
 .product h2{
     margin: 10px 2px ;
     font-size: 20px;
@@ -131,7 +136,7 @@ body .container{
     color: white;
 }
 
-/* MEDIA */
+/* MEDIAS */
 
 /* TABLET */ 
 
@@ -154,18 +159,12 @@ body .container{
         margin: 0 5px;
         font-size: 14px;
     }
-    .product{
-        width: 48%;
-        display: inline-block;
-    }
 }
 
 /* DESKTOP */
 
 @media (min-width: 1024px){
-    .product{
-        width: 32%;
-    }
+    
     .main-nav ul li a{
         padding: 10px 30px;
         margin: 0 5px;
@@ -176,23 +175,27 @@ body .container{
     }
 
     .main-footer{
-        display: none;
-    }
-    .main-footer-2{
         text-align: center;
         background-color: var(--bgr);
         padding: 50px 0;
         border-radius: 30px 30px 0 0;
     }
-    .main-footer-2 ul li{
+    .main-footer ul li{
         display: inline-block;
+        border-right: 1px solid white;
+        padding: 0 10px;
     }
-    .main-footer-2 ul li a{
+    .main-footer ul li a{
         text-decoration: none;
         color: white;
         font-weight: bold;
+        font-size: 12px;
+        padding: 0 ;
     }
-    .main-footer-2{
+    .main-footer ul li:last-child{
+        border: none;
+    }
+    .main-footer{
         display:block;
     }
 }
